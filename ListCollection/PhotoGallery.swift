@@ -14,7 +14,7 @@ class PhotoGallery{
     init(){
         setupGallery()
     }
-    
+
     
     func setupGallery(){
         for i in 0...4{
