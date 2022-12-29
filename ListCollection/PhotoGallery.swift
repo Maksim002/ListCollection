@@ -16,6 +16,8 @@ class PhotoGallery{
     }
 
     
+    
+    
     func setupGallery(){
         for i in 0...4{
             let image = UIImage(named: "im\(i)")!
