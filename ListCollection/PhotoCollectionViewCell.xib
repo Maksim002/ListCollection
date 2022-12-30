@@ -11,23 +11,25 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell" customModule="ListCollection" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="203" height="182"/>
+            <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="203" height="182"/>
+                <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="220" verticalHuggingPriority="220" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="clX-wc-Ohg">
-                        <rect key="frame" x="0.0" y="0.0" width="203" height="182"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="clX-wc-Ohg">
+                        <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
             <constraints>
-                <constraint firstItem="clX-wc-Ohg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gnc-6a-Ixt"/>
-                <constraint firstAttribute="bottom" secondItem="clX-wc-Ohg" secondAttribute="bottom" id="R5s-Uo-b09"/>
-                <constraint firstItem="clX-wc-Ohg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iMc-OM-gaI"/>
-                <constraint firstAttribute="trailing" secondItem="clX-wc-Ohg" secondAttribute="trailing" id="soH-B9-fNW"/>
+                <constraint firstItem="clX-wc-Ohg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="F3Q-N4-dC1"/>
+                <constraint firstAttribute="trailing" secondItem="clX-wc-Ohg" secondAttribute="trailing" id="G0e-TR-8Ce"/>
+                <constraint firstAttribute="bottom" secondItem="clX-wc-Ohg" secondAttribute="bottom" id="Jh6-cI-z8T"/>
+                <constraint firstItem="clX-wc-Ohg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hLi-J2-xUg"/>
             </constraints>
             <size key="customSize" width="203" height="182"/>
             <connections>

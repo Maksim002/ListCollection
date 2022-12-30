@@ -20,7 +20,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
-        
+        var s = UICollectionViewFlowLayout()
+        s.minimumInteritemSpacing = 0
+        s.minimumLineSpacing = 0
+        collectionView.collectionViewLayout = s
         collectionView.register(UINib(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifire)
     }
 }
@@ -38,12 +41,9 @@ extension ViewController: UICollectionViewDataSource, UIScrollViewDelegate, UICo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let frameCv = collectionView.frame
-        
         let widthCell = frameCv.width / CGFloat(countCells)
         let heigCell = widthCell
-        
-        let spacing = CGFloat((countCells + 1)) * offset / CGFloat(countCells)
-        return CGSize(width: widthCell - spacing, height: heigCell - (offset * 2))
+        return CGSize(width: widthCell , height: heigCell)
     }
 }
 

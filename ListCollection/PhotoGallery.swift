@@ -14,10 +14,10 @@ class PhotoGallery{
     init(){
         setupGallery()
     }
-
+	
     //Jopah
     func setupGallery(){
-        for i in 0...4{
+        for i in 0...5{
             let image = UIImage(named: "im\(i)")!
             images.append(image)
         }
